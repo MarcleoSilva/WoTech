@@ -133,3 +133,18 @@ body::before {
     letter-spacing: 2px;
     text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.faq {
+    max-width: 80vw;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: var(--color-card-bg);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+    display: grid;
+}
+
+.faq h1 {
+    justify-self: center;
+}
