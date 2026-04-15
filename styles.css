@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #105666;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #105666;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#logo {
+    max-width: 200px;
+    height: auto;
+}
+
+button{
+    padding: 0;
+    margin: 0;
+    padding: 0cap;
+    border-width: 0cap;
+    bottom: 0;
+    border: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f4d5;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: fit-content;
+    z-index: 1000;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+ul li {
+    flex: 1;
+    text-align: center;
+}
+
+.menu {
+    display: inline-block;
+    text-decoration: none;
+    color: #105666;
+    background-color: #f7f4d5;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.menu:hover {
+    background-color: #188ca7;
+    color: #f7f4d5;
+    
+}
+
+section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 20px;
+}
+
+.historias {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+}
+
+
+
+p {
+    color: #f7f4d5;
+    font-size: 16px;
+}
+
+#materia {
+    text-align: left;
+    width: 50vw;
+
+}
+
+#grupo {
+    text-align: right;
+    width: 50vw;
+}
+
+.main {
+    background: #f7f4d5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.main h2 {
+    margin: 0;
+    color: #105666;
+    font-family: 'Arial Black', Arial, Helvetica, sans-serif;}
+
+.main div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+#imgprojeto, #imgestatisticas, #imgoportunidades, #imgforum, #imghistoria {
+    max-width: 500px;
+    height: auto;
+    border-radius: 30px;
+    padding-left: 10px;
+
+}
+
+.main p {
+    flex: 1;
+    color: #333;
+    margin-bottom: 0;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 25px;
+    font-family:monospace;
+}
+
+.cta {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #105666;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: none;
+}
+
+.cta:hover {
+    
+    transform: scale(1.05);
+     display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #105666cc;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: none;
+}
+
+
+@media (max-width: 1421px) {
+    .main div {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px; 
+    border-radius: 8px;
+}
+}
+
+footer {
+    background-color: #0b3d49; /* Tom levemente mais escuro que o fundo para destacar */
+    padding: 30px 20px;
+    margin-top: 40px;
+    border-top: 2px solid #188ca7;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Garante que não quebre em telas muito pequenas */
+    gap: 20px;
+}
+
+.footer-info p {
+    color: #f7f4d5;
+    font-size: 16px;
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.footer-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #105666;
+    background-color: #f7f4d5;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.footer-btn:hover {
+    background-color: #188ca7;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+
+.btn-top {
+    background-color: #188ca7;
+    color: #fff;
+}
+
+.btn-top:hover {
+    background-color: #f7f4d5;
+    color: #105666;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
