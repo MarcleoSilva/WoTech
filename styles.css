@@ -130,6 +130,7 @@ p {
 }
 
 #imgprojeto, #imgestatisticas, #imgoportunidades, #imgforum, #imghistoria {
+    width: 70vw;
     max-width: 500px;
     height: auto;
     border-radius: 30px;
@@ -190,7 +191,7 @@ p {
 }
 
 footer {
-    background-color: #0b3d49; /* Tom levemente mais escuro que o fundo para destacar */
+    background-color: #0b3d49; 
     padding: 30px 20px;
     margin-top: 40px;
     border-top: 2px solid #188ca7;
@@ -202,7 +203,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Garante que não quebre em telas muito pequenas */
+    flex-wrap: wrap; 
     gap: 20px;
 }
 
@@ -248,8 +249,30 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .main p{
+        font-size: 17px;
+    }
     .footer-content {
         flex-direction: column;
         text-align: center;
     }
+
+    #imgprojeto, #imgestatisticas, #imgoportunidades, #imgforum, #imghistoria {
+    width: 70vw;
+    max-height: 300px;
+    overflow: hidden;
+    height: auto;
+    border-radius: 30px;
+    padding-left: 10px;
+
+}
+}
+
+@media (max-width: 785px) {
+    nav ul{
+        display: grid;
+        grid-column: auto;
+        grid-template-columns: 1fr;
+    }
+
 }
